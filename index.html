@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Stock - Ambar Nails</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section id="login">
+    <h2>Ingreso de Empleado</h2>
+    <form id="formLogin">
+      <input type="number" id="numEmpleado" placeholder="Número de empleado" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+    <p id="mensajeLogin" class="error"></p>
+  </section>
+
+  <section id="panelStock" style="display: none;">
+    <h2>Gestión de Stock</h2>
+
+    <form id="formProducto">
+      <input type="text" id="nombre" placeholder="Nombre del producto" required>
+      <input type="number" id="cantidad" placeholder="Cantidad" required>
+      <input type="number" id="precio" placeholder="Precio" required>
+      <input type="text" id="codigo" placeholder="Código del producto" required>
+      <button type="submit">Agregar al Stock</button>
+    </form>
+
+    <h3>Stock Actual</h3>
+    <div id="listaProductos"></div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
